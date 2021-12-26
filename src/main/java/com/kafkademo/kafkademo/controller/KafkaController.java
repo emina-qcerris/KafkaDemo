@@ -39,4 +39,9 @@ public class KafkaController {
         kafkaService.send("Mihajlo je moja beba.");
         return "Uspesno poslato na kafku.";
     }
+
+    @GetMapping(value="/all")
+    public String listOfAllBoxes(){
+        return "Everything.";
+    }
 }
